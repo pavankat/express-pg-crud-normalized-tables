@@ -1,0 +1,27 @@
+<h1>Sauces</h1>
+
+<table>
+
+	<tr>
+		<th>name</th>
+		<th>price</th>
+		<th>manufacturer name</th>
+		<th>edit</th>
+		<th>delete</th>
+	</tr>
+
+	{{#each sauces}}
+		<tr>
+			<td>{{name}}</td>
+			<td>${{price}}</td>
+			<td>{{manufacturer_name}}</td>
+			<td><a href="/edit-sauce/{{id}}">edit</a></td>
+			<td>
+				<form action="/delete-sauce/{{id}}" method="POST">
+					<input type="hidden" name="_method" value="DELETE">
+					<button type="submit">delete</button>
+				</form>
+			</td>
+		</tr>
+	{{/each}}
+</table>

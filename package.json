@@ -1,0 +1,20 @@
+{
+  "name": "tuesday_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "express": "^4.13.1",
+    "express-handlebars": "^2.0.1",
+    "method-override": "^2.3.3",
+    "morgan": "^1.6.1",
+    "path": "^0.11.14",
+    "pg": "^4.4.0"
+  }
+}

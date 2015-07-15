@@ -1,0 +1,15 @@
+<h1>New Sauce</h1>
+
+<form action="/create-sauce" method="POST">
+	<input type="text" name="name" placeholder="sauce name">
+	<br>
+	<input type="text" name="price" placeholder="sauce price">
+	<br>
+	<select name="manufacturer_id">
+		{{#each manufacturers}}
+			<option value="{{id}}">{{name}}</option>
+		{{/each}}
+	</select>
+	<br>
+	<input type="submit" value="submit">
+</form>

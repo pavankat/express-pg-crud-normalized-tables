@@ -1,0 +1,24 @@
+<h1>Manufacturers</h1>
+
+<table>
+
+	<tr>
+		<th>name</th>
+		<th>edit</th>
+		<th>delete</th>
+	</tr>
+
+	{{#each manufacturers}}
+		<tr>
+			<td><a href="/manufacturers/{{id}}">{{name}}</a></td>
+			<td><a href="/edit-manufacturer/{{id}}">edit</a></td>
+
+			<td>
+				<form action="/delete-manufacturer/{{id}}" method="POST">
+					<input type="hidden" name="_method" value="DELETE">
+					<button type="submit">delete</button>
+				</form>
+			</td>
+		</tr>
+	{{/each}}
+</table>

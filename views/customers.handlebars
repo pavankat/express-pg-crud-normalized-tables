@@ -1,0 +1,25 @@
+<h1>Customers</h1>
+
+<table>
+
+	<tr>
+		<th>name</th>
+		<th>email</th>
+		<th>edit</th>
+		<th>delete</th>
+	</tr>
+
+	{{#each customers}}
+		<tr>
+			<td><a href="/customers/{{id}}">{{name}}</a></td>
+			<td>{{email}}</td>
+			<td><a href="/edit-customer/{{id}}">edit</a></td>
+			<td>
+				<form action="/delete-customer/{{id}}" method="POST">
+					<input type="hidden" name="_method" value="DELETE">
+					<button type="submit">delete</button>
+				</form>
+			</td>
+		</tr>
+	{{/each}}
+</table>

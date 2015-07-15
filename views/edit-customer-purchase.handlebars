@@ -1,0 +1,16 @@
+<h1>Edit Customer Purchase</h1>
+
+<form action="/update-customer-purchase/{{id}}" method="POST">
+	<input type="hidden" name="_method" value="PUT">
+
+	{{{selectOne}}}
+
+	<br>
+
+	{{{selectTwo}}}
+	<br>
+	<input type="text" name="quantity" placeholder="how many?" value="{{quantity}}">
+	<br>
+	<input type="submit" value="update">
+
+</form>

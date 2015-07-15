@@ -1,0 +1,22 @@
+<h1>New Customer Purchase for customer {{customer_id}}</h1>
+
+<form action="/create-customer-purchase" method="POST">
+	<select name="customer_id">
+		{{#each customers}}
+			<option value="{{id}}">{{name}} - {{email}}</option>
+		{{/each}}
+	</select>
+
+	<br>
+
+	<select name="sauce_id">
+		{{#each sauces}}
+			<option value="{{id}}">{{name}} : ${{price}}</option>
+		{{/each}}
+	</select>
+	<br>
+	<input type="text" name="quantity" placeholder="how many?">
+	<br>
+	<input type="submit" value="submit">
+
+</form>

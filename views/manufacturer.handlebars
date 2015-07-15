@@ -1,0 +1,17 @@
+<h1>Manufacturer {{sauces.0.name}} ({{sauces.0.id}})</h1>
+
+<h2>Sauces made by {{sauces.0.name}}</h2>
+<table>
+
+	<tr>
+		<th>name</th>
+		<th>price</th>
+	</tr>
+
+	{{#each sauces}}
+		<tr>
+			<td>{{sauce_name}}</td>
+			<td>{{price}}</td>
+		</tr>
+	{{/each}}
+</table>

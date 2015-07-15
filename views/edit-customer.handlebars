@@ -1,0 +1,10 @@
+<h1>Edit Customer</h1>
+
+<form action="/update-customer/{{id}}" method="POST">
+	<input type="hidden" name="_method" value="PUT">
+
+	<input type="text" name="name" placeholder="customer name" value="{{name}}">
+	<input type="text" name="email" placeholder="customer email" value="{{email}}">
+	<br>
+	<input type="submit" value="update">
+</form>

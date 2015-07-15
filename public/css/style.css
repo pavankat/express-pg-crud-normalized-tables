@@ -1,0 +1,39 @@
+ul {
+	float: left;
+}
+
+#container {
+	clear: both;
+}
+
+input[type=text] {
+	width: 300px;
+	height: 50px;
+	background-color: black;
+	margin: 5px;
+	color: white; /* set text color inside of an input */
+}
+
+input[type=submit] {
+	width: 50px;
+	height: 50px;
+	background-color: green;
+	margin: 5px;
+}
+
+select {
+	margin: 5px;
+}
+
+table, td, th {
+    border: 1px green;
+}
+
+td, th {
+	padding: 5px;
+}
+
+th {
+    background-color: green;
+    color: white;
+}

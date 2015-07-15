@@ -1,0 +1,24 @@
+<h1>Customer {{purchases.0.name}} ({{purchases.0.id}})</h1>
+
+<p>Email: {{purchases.0.email}}</p>
+
+<h2>Customer Purchases</h2>
+<table>
+
+	<tr>
+		<th>name</th>
+		<th>price</th>
+		<th>quantity</th>
+		<th>edit</th>
+	</tr>
+
+	{{#each purchases}}
+		<tr>
+			<td>{{sauce_name}}</td>
+			<td>${{price}}</td>
+			<td>{{quantity}}</td>
+			<td><a href="/edit-customer-purchase/{{customer_id}}">edit purchase</a></td>
+
+		</tr>
+	{{/each}}
+</table>
