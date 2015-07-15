@@ -22,7 +22,7 @@
 
 # Summary
 
-You will be making a basic Customer Relationship Management (CRM) System for a distributor of sauces. The distributor works with retailers that sell the sauces.
+This is a basic Customer Relationship Management (CRM) System for a distributor of sauces. The distributor works with retailers that sell the sauces.
 
 # Screencasts
 
