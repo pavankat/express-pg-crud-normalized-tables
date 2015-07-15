@@ -1,17 +1,21 @@
 # Creating DB, Executing Schema file and Importing data in
 
 1. get into postgreSQL console:
+
 ```psql ```
 
 2. create the sauce_db database:
+
 ```CREATE DATABASE sauce_db;```
 
 3. in psql while connected to the sauce_db database, import the schema.sql file:
+
 ```
 \i <path to the file>/schema.sql
 ```
 
 4. This needs to be done after step 3: in psql while connected to the sauce_db database, import the seed.sql file:
+
 ```
 \i <path to the file>/seed.sql
 ```
